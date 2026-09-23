@@ -10,3 +10,4 @@ coverage/
 *.png
 
 JSON_FORMAT.md
+.gitignore
