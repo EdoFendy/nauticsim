@@ -1,0 +1,6 @@
+{
+  "name": "NauticSim",
+  "description": "A marine electrical circuit simulator for designing and testing boat wiring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

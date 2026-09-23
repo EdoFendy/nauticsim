@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-flow-forward {
+    animation: flow-fwd 1s linear infinite;
+  }
+  .animate-flow-backward {
+    animation: flow-bwd 1s linear infinite;
+  }
+}
+
+@keyframes flow-fwd {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+@keyframes flow-bwd {
+  to {
+    stroke-dashoffset: 16;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 10px;
+}
+
+/* Lesson panel entrance animation */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-in {
+  animation: slideInLeft 0.35s ease-out both;
+}
